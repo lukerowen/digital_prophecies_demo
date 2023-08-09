@@ -42,7 +42,7 @@ function submitText() {
     }
 
     // xhttp.open("POST", "http://localho.st:8080", true);
-    xhttp.open("POST", "http://ec2-52-53-220-152.us-west-1.compute.amazonaws.com:8080", true);
+    xhttp.open("POST", "https://ec2-52-53-220-152.us-west-1.compute.amazonaws.com:8080", true);
 
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify(conversation));
