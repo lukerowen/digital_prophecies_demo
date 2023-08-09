@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Prophecies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "row">
+        <div class = "col-3 content" id = "side_bar">
+            <div class = "row"> <button type="button" class="btn btn-primary new_message" onclick="openCreationPage();">New Message</button> </div>
+<!--            <div class = "row contact"> <button type="button" class="btn btn-primary" id = "c0" onclick="switchConvo(0)">Jack Sparrow</button> </div>-->
+<!--            <div class = "row contact"> <button type="button" class="btn btn-primary" id = "c1" onclick="switchConvo(1)">Tony Stark</button> </div>-->
+        </div>
+        <div class = "col-8 content" id = "main_side">
+            <div class = "row current_convo" id="current_convo"></div>
+            <div class = "row">
+                <form id="user_input" onsubmit="submitText();return false">
+                    <input type="text" id="text_input">
+                    <input class = "btn btn-primary" type="submit" id="send" value="send">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class = "charCreationOverlay" id="charOverlay" hidden>
+        <div class="row content charCreate">
+            <form onsubmit="createCharacter();return false">
+                <label for="charNameInput" title="The name of who you want to talk to.">Character Name: </label>
+                <input type="text" class="charInputs" name="charName" id="charNameInput" placeholder="Name" required><br><br>
+                <label for="charOriginInput" title="The medium they come from.&#10;Can either be the exact name of the media or the type.">Origin: </label>
+                <input type="text" class="charInputs" name="charOrigin" id="charOriginInput" placeholder="Movie/Book/Play/..." required><br><br>
+                <label for="isNSFW" title="Whether or not explicit content is allowed in the conversation.">Allow Explicit Content: </label>
+                <input type="checkbox" name="isNSFW" id="isNSFW"><br><br>
+                <label for="additionalInfo" title="Any additional information or parameters that should be accounted for.">Additional Content: </label><br>
+                <textarea name="additionalInfo" id="additionalInfo" cols="50" rows="10" placeholder="OPTIONAL&#10;This is where you add any additional parameters about this character"></textarea><br><br>
+                <button class = "btn btn-primary">submit</button>
+            </form>
+            <button class = "btn btn-primary" id = "closeCreationBtn" onclick="closeCreationPage()"> X </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

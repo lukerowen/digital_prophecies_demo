@@ -1,0 +1,12 @@
+{
+  "name": "digital_prophecies_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "DP_Server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^3.3.0"
+  }
+}

@@ -1,0 +1,119 @@
+:root {
+    --bg-color: #251a25;
+}
+
+body {
+    background: var(--bg-color);
+    color: white;
+    font-family: "Helvetica Neue";
+}
+
+.content {
+    /*border-color: black;*/
+    /*border-style: solid;*/
+    margin-bottom: 1%;
+    margin-top: 1%;
+    height: 95vh;
+}
+
+.contact {
+    padding: 5px;
+}
+
+#side_bar {
+    margin-left: 2%;
+    margin-top: 1%;
+    padding: 1%;
+    border-right: white;
+    border-right-style: solid;
+}
+
+.contact {
+    height: 10vh;
+    font-size: 24px;
+}
+
+#main_side {
+    margin-top: 1%;
+    padding: 1%;
+}
+
+.current_convo {
+    max-height: 95%;
+    min-height: fit-content;
+    padding: 1.5%;
+    overflow-y: auto;
+}
+
+#current_content{
+    font-size: 24px;
+}
+
+#user_input{
+    position: absolute;
+    bottom: 5%;
+}
+
+#text_input {
+    width: 60%;
+}
+
+.btn {
+    background-color: #525252;
+    border: none;
+}
+
+#current_content {
+    background-color: var(--bg-color);
+    border:none;
+    resize: none;
+    color: white;
+}
+
+.message {
+    max-width: 33%;
+    min-width: fit-content;
+    word-wrap: break-word;
+}
+
+.new_message {
+    max-width: fit-content;
+    position: absolute;
+    bottom: 5%;
+}
+
+.charCreate {
+    margin-top: 7%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 1%;
+}
+
+#isNSFW {
+    width: 20px;
+    height: 20px;
+}
+
+.charInputs {
+    width: 50%;
+    height: 32px;
+}
+
+.charCreationOverlay {
+    position: absolute;
+    top: 5%;
+    left: 33%;
+    height: 80vh;
+    width: 50vw;
+    background: var(--bg-color);
+    border-style: groove;
+    border-width: thick;
+}
+
+#closeCreationBtn {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
